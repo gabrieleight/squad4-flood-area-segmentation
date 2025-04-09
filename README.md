@@ -1,8 +1,9 @@
-# Squad4 - Flood Area Segmentation
+# Squad 4 - Flood Area Segmentation
 # 🌊 Modelo de Segmentação de Áreas Inundadas
 
 **Bootcamp Machine Learning - Atlântico Avanti**  
 Repositório para desenvolvimento do projeto "Flood Area Segmentation" do bootcamp de Machine Learning da Atlântico Avanti
+
 Projeto de análise exploratória e modelagem para identificação de áreas alagadas.
 
 ---
@@ -24,3 +25,16 @@ Estrutura:
 - Arquivo `metadata.csv`: Metadados do conjunto de dados
 
 ---
+
+## 👥 Equipe
+* Adriana Bispo
+
+* Alexandre Teixeira
+
+* Anna Luiza Laudares
+
+* Gabriel Oliveira
+
+* Juliana Rodrigues
+
+* Letícia Moreira
