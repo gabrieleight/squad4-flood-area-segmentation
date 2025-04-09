@@ -44,19 +44,23 @@ Estrutura:
 - ### Entrega 01:
 ○​ Integridade dos Arquivos
 
-1.​ Verifique se todas as imagens listadas no arquivo de informações realmente existem no diretório de imagens e vice-versa.
-2.​ Verifique se todas as imagens estão no mesmo formato, ex: JPEG, PNG, etc.
+1. Verifique se todas as imagens listadas no arquivo de informações realmente existem no diretório de imagens e vice-versa.
+2. Verifique se todas as imagens estão no mesmo formato, ex: JPEG, PNG, etc.
 
 ○​ Consistência dos Metadados
+
 1. Verifique se há valores ausentes nos metadados e como esses casos são tratados.
-2.​ Verifique valores inconsistentes, por exemplo: dimensões de imagens fora do esperado.
+2. Verifique valores inconsistentes, por exemplo: dimensões de imagens fora do esperado.
 
 ○​ Qualidade das Imagens
-1.​ Identifique imagens corrompidas que não podem ser abertas ou processadas.
+
+1. Identifique imagens corrompidas que não podem ser abertas ou processadas.
 
 ○​ Distribuição das Classes
-1.​ Verifique a distribuição das classes para identificar possíveis desequilíbrios que possam afetar a modelagem
+
+1. Verifique a distribuição das classes para identificar possíveis desequilíbrios que possam afetar a modelagem
 
 ○​ Duplicatas
-1.​ Identifique imagens duplicadas que possam enviesar os resultados.
-2.​ Verifique duplicatas no arquivo de informações.
+
+1. Identifique imagens duplicadas que possam enviesar os resultados.
+2. Verifique duplicatas no arquivo de informações.
