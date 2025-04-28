@@ -1,31 +1,60 @@
-# Squad 4 - Flood Area Segmentation
-# 🌊 Modelo de Segmentação de Áreas Inundadas
+# 🌊 Flood Area Segmentation - Bootcamp de Machine Learning | Atlântico Avanti
 
-**Bootcamp Machine Learning - Atlântico Avanti**  
-Repositório para desenvolvimento do projeto "Flood Area Segmentation" do bootcamp de Machine Learning da Atlântico Avanti
+Projeto desenvolvido em equipe durante o **Bootcamp de Machine Learning** promovido pela **Atlântico Avanti**. Nosso desafio consiste em aplicar técnicas de Visão Computacional e Aprendizado de Máquina para **segmentar áreas afetadas por inundações** a partir de imagens de satélite.
 
-Projeto de análise exploratória e modelagem para identificação de áreas alagadas.
+## 📁 Dataset
 
----
+Utilizamos o dataset disponível no Kaggle:  
+🔗 [Flood Area Segmentation Dataset](https://www.kaggle.com/datasets/faizalkarim/flood-area-segmentation/data)
 
-## 📋 Objetivo
-Realizar análise exploratória do dataset [Flood Area Segmentation](https://www.kaggle.com/datasets/faizalkarim/flood-area-segmentation), abordando:
-- Verificação de formatos e integridade dos arquivos
-- Processamento de imagens e máscaras
-- Insights iniciais para construção de modelos de segmentação
+O conjunto de dados contém:
+- Imagens das áreas inundadas
+- Máscaras de segmentação que identificam áreas inundadas
 
----
+## 🎯 Objetivo
 
-## 🗂 Dataset
-Disponível no Kaggle: [https://www.kaggle.com/datasets/faizalkarim/flood-area-segmentation](https://www.kaggle.com/datasets/faizalkarim/flood-area-segmentation?select=Image)  
-Estrutura:
-- Pasta `Image`: Imagens de áreas alagadas
-- Pasta `Mask`: Máscaras de segmentação
-- Arquivo `metadata.csv`: Metadados do conjunto de dados
+Construir um modelo de **segmentação semântica** capaz de identificar com precisão as regiões alagadas em imagens de satélite.  
+Esse tipo de solução pode ser aplicada para monitoramento ambiental, resposta a desastres naturais e planejamento urbano.
 
----
+## 🛠️ Tecnologias e Ferramentas
 
-## 👥 Equipe
+- **Linguagem:** Python 3.9+
+- **Bibliotecas principais:**  
+  - NumPy / Pandas
+  - Matplotlib / Seaborn
+  - OpenCV
+  - TensorFlow / Keras
+- **Modelos testados:**
+  - ERFNet
+  - UNet adaptada com EfficientNetB2
+- **Ambiente:** Google Colab / Jupyter Notebook
+
+## 🧪 Etapas do Projeto
+
+1. **Análise Exploratória dos Dados (EDA)**  
+   - Visualização de imagens e máscaras  
+   - Verificação de balanceamento de classes  
+   - Estatísticas básicas dos dados  
+
+2. **Pré-processamento**  
+   - Redimensionamento das imagens  
+   - Normalização dos pixels  
+   - Augmentations (data augmentation) para aumentar a robustez do modelo  
+
+3. **Treinamento dos Modelos**  
+   - Arquitetura base: UNet  
+   - Funções de perda customizadas (como Dice Loss)  
+   - Métricas: IoU (Intersection over Union), F1 Score  
+
+4. **Avaliação**  
+   - Análise quantitativa e qualitativa  
+   - Visualização das predições versus máscaras reais  
+
+## 📊 Resultados (parciais)
+
+
+## 🤝 Integrantes da Equipe
+
 * [Adriana Bispo](https://www.linkedin.com/in/adrianabispo283/)
 
 * [Alexandre Teixeira](https://www.linkedin.com/in/alexandre-teixeira-1544b8322/)
@@ -38,29 +67,32 @@ Estrutura:
 
 * [Letícia Moreira](https://www.linkedin.com/in/let%C3%ADcia-moreira-pinto/)
 
----
 
 ## 🔍 Entregas
-- ### Entrega 01:
-○​ Integridade dos Arquivos
+### Entrega 01:
 
-1. Verifique se todas as imagens listadas no arquivo de informações realmente existem no diretório de imagens e vice-versa.
-2. Verifique se todas as imagens estão no mesmo formato, ex: JPEG, PNG, etc.
+Integridade dos Arquivos
 
-○​ Consistência dos Metadados
+1. Verificar se todas as imagens listadas no arquivo de informações realmente existem no diretório de imagens e vice-versa.
+2. Verificar se todas as imagens estão no mesmo formato, ex: JPEG, PNG, etc.
 
-1. Verifique se há valores ausentes nos metadados e como esses casos são tratados.
-2. Verifique valores inconsistentes, por exemplo: dimensões de imagens fora do esperado.
+Consistência dos Metadados
 
-○​ Qualidade das Imagens
+3. Verificar se há valores ausentes nos metadados e como esses casos são tratados.
+4. Verificar valores inconsistentes, por exemplo: dimensões de imagens fora do esperado.
 
-1. Identifique imagens corrompidas que não podem ser abertas ou processadas.
+Qualidade das Imagens
 
-○​ Distribuição das Classes
+5. Identificar imagens corrompidas que não podem ser abertas ou processadas.
 
-1. Verifique a distribuição das classes para identificar possíveis desequilíbrios que possam afetar a modelagem
+Distribuição das Classes
 
-○​ Duplicatas
+6. Verificar a distribuição das classes para identificar possíveis desequilíbrios que possam afetar a modelagem
 
-1. Identifique imagens duplicadas que possam enviesar os resultados.
-2. Verifique duplicatas no arquivo de informações.
+Duplicatas
+
+7. Identificar imagens duplicadas que possam enviesar os resultados.
+8. Verificar duplicatas no arquivo de informações.
+
+### Entrega 03:
+"Colocar etapas da entrega 03"
