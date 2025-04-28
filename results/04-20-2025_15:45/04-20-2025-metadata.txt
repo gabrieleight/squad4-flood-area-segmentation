@@ -1,0 +1,6 @@
+analyse process from 04-20-2025, 15:50 Brazil:
+
+batch_size = 30
+epochs = 30
+ask_epoch = 30
+validation_split = 0.2

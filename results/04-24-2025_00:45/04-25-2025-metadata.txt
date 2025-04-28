@@ -1,0 +1,8 @@
+analyse process from 04-23-2025, 23:50 Brazil:
+
+batch_size = 32
+epochs = 10
+ask_epoch = 10
+validation_split = 0.2
+
+Adam: learning_rate = 0.001
